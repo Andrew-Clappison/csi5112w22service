@@ -32,4 +32,4 @@ jobs:
         docker build -t todo_ecr .
         docker tag todo_ecr:latest 712831711645.dkr.ecr.ca-central-1.amazonaws.com/todo_ecr:latest
         docker push 712831711645.dkr.ecr.ca-central-1.amazonaws.com/todo_ecr:latest
-        aws ecs update-service --cluster $ECS_CLUSTER --service $ECS_SERVICE --force-new-deployment --region $AWS_REGION
+        # aws ecs update-service --cluster $ECS_CLUSTER --service $ECS_SERVICE --force-new-deployment --region $AWS_REGION
